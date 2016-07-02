@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'GothamPro-Bold';
-	src: url('fonts/GothamPro/GothamPro-Bold/GothamPro-Bold.eot?') format('eot'), 
-	     url('fonts/GothamPro/GothamPro-Bold/GothamPro-Bold.otf')  format('opentype'),
-	     url('fonts/GothamPro/GothamPro-Bold/GothamPro-Bold.woff') format('woff'), 
-	     url('fonts/GothamPro/GothamPro-Bold/GothamPro-Bold.ttf')  format('truetype'),
-	     url('fonts/GothamPro/GothamPro-Bold/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+	src: url('../fonts/GothamPro/GothamPro-Bold/GothamPro-Bold.eot?') format('eot'), 
+	     url('../fonts/GothamPro/GothamPro-Bold/GothamPro-Bold.otf')  format('opentype'),
+	     url('../fonts/GothamPro/GothamPro-Bold/GothamPro-Bold.woff') format('woff'), 
+	     url('../fonts/GothamPro/GothamPro-Bold/GothamPro-Bold.ttf')  format('truetype'),
+	     url('../fonts/GothamPro/GothamPro-Bold/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
 }
 
 h1{
@@ -18,7 +18,7 @@ h1{
 }
 
 .clients{
-	background-image: url("img/header_background.jpg");
+	background-image: url("../img/header_background.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;
 	height:790px;
@@ -48,7 +48,7 @@ h1{
 }
 
 .logo_img{
-	background-image: url('img/logo.png');
+	background-image: url('../img/logo.png');
 	background-repeat: no-repeat;
 	height:68px;
 	width:59px;
@@ -148,7 +148,7 @@ h1{
 	top:-48px
 }
 
-.arrow{
+.arrow {
 
 	display:block;
 	margin:-145px auto;
