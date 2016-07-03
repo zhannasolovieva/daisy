@@ -13,6 +13,15 @@ h1{
 	text-transform: uppercase;
 }
 
+h2{
+	color:#868686;
+	font-size: 28px;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	height: 1.5em;
+}
+
 .wrap{
 	margin:0 auto;
 	width:940px;
@@ -167,3 +176,236 @@ h1{
 	background: url('../img/arrow.png') no-repeat center top;
 	height: 28px;
 }
+
+.advantages{
+	position:relative;
+	padding-top:68px;
+	padding-bottom: 15px;
+}
+
+.text{
+	width: 521px;
+	display: block;
+	margin: 20px auto 86px;
+	text-align: center;
+	color:#adadad;
+	line-height: 26px;
+	
+}
+
+h2 > span{
+	position: relative;
+}
+
+h2 > span::after{
+	content:"";
+	width:100%;
+	height:1px;
+	background-color:#adadad;
+	display:block;
+	position: absolute;
+	bottom: -.25em;
+	left:0;
+}
+
+.icons-item{
+	float:left;
+	width:25%;
+	text-align: center;
+	padding:0 10px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.icons-item .hexagon{
+	width:101px;
+	height: 116px;
+	background-image: url('../img/spritesheet_01.png');
+	display: inline-block;
+}
+
+.hexagon-icon{
+	background-image: url('../img/spritesheet_02.png');
+	width:40px;
+	height:40px;
+}
+
+.advantages h3{
+	font-size: 20px;
+	text-transform: uppercase;
+	color:#868686;
+	margin-top:22px;
+}
+
+h3 > span{
+	position: relative;
+}
+
+h3 > span::after{
+	content:"";
+	width:100%;
+	height:1px;
+	background-color:#adadad;
+	display:block;
+	position: absolute;
+	bottom: -.25em;
+	left:0;
+}
+
+.icons-info{
+	font-size: 15px;
+	color:#adadad;
+	margin-top: 22px;
+	display: inline-block;
+	line-height: 18px;
+}
+
+.advantages .arrow{
+	background: url('../img/arrow_white.png') no-repeat center top;
+	margin-top:52px;
+}
+
+.business{
+	background-image: url("../img/business_bgr.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding-top:90px;
+	padding-bottom:20px;
+}
+
+.rect{
+	width:100%;
+	height:200px;
+	border:solid 10px #fff {0,1};
+}
+/*
+.hexagon {
+	width: 100px;
+	height: 55px;
+	background: #fc635e;
+	position: relative;
+	display: inline-block;
+}
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid #fc635e;
+}
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid #fc635e;
+}
+
+.hexagon2 {
+	width: 96px;
+	height: 52.8px;
+	background: blue;
+	position: relative;
+	display: inline-block;
+}
+.hexagon2:before {
+	content: "";
+	position: absolute;
+	top: -24px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 48px solid transparent;
+	border-right: 48px solid transparent;
+	border-bottom: 24px solid blue;
+}
+.hexagon2:after {
+	content: "";
+	position: absolute;
+	bottom: -24px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 48px solid transparent;
+	border-right: 48px solid transparent;
+	border-top: 24px solid blue;
+}*/
+/*
+.hexagon{
+	position: relative;
+}
+
+.hexagon > div{
+	
+	height:50%;
+	width:50%;
+	position: absolute;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.hexagon > div::before{
+	content: '';
+	display: block;
+	height:1px;
+	width:100%;
+	position: absolute;
+	background-color: red;
+}
+
+.hexagon :first-child{
+	transform: rotate(30deg);
+	top:7.2%; 
+	right:7.2%;  
+}
+
+.hexagon :nth-child(2){
+	transform: rotate(90deg); 
+	right:0;
+	top:21.6%;
+}
+
+.hexagon :nth-child(3){
+	transform: rotate(150deg); 
+	right:7.2%; 
+	bottom:0;
+}
+
+.hexagon :nth-child(4){
+	transform: rotate(210deg);  
+}
+
+.hexagon :nth-child(5){
+	transform: rotate(270deg);  
+}
+
+.hexagon :last-child{
+	transform: rotate(330deg);  
+}
+
+.hexagon .content{
+	position: absolute;
+	width:100%;
+	top:0;
+	bottom:0;
+}
+
+.hexagon-100{
+	height:100px;
+	width:100px;	
+}
+
+.hexagon-200{
+	height:200px;
+	width:200px;	
+}*/
