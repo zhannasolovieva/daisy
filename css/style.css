@@ -7,21 +7,27 @@
 	     url('../fonts/GothamPro/GothamPro-Bold/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
 }
 
+body{
+	font-family: Lato;
+}
 h1{
 	color:#fff;
 	font-size: 50px;
+	font-weight:700;
 	text-transform: uppercase;
 }
 
 h2{
 	color:#868686;
 	font-size: 28px;
+	font-weight:700;
 	text-transform: uppercase;
 	display: block;
 	text-align: center;
 }
 
 .wrap{
+	height: 100%;
 	margin:0 auto;
 	width:940px;
 }
@@ -61,6 +67,7 @@ h2{
 	border-radius: 5px;
 	margin:0 auto;
 	color:#fc645f;
+	font-family: Lato;
 	text-align:center;
 	display: inline-block;
 	-webkit-box-sizing: border-box;
@@ -74,112 +81,6 @@ h2{
 	color:#ffffff;
 }
 
-.hexagon{
-	position: relative;
-	text-align: center;
-}
-
-.hexagon::before{
-	content:'';
-	display:block;
-	height:100%;
-	padding-bottom: 100%;
-}
-
-.hexagon-100{
-	width:100px;
-}
-
-.hexagon-150{
-	width:150px;
-}
-
-.hexagon-90deg{
-	transform: rotate(90deg);
-}
-
-.hexagon .rectangle{
-	border-left: solid 1px red;
-	border-right: solid 1px red;
-	box-sizing: border-box;
-	height:50%;
-	overflow: hidden;
-	position: absolute;
-	width:86.6%;
-}
-
-.hexagon .rectangle:first-child{
-	transform: translate(-50%, -50%);
-	top: 50%;
-	left:50%;
-}
-
-.hexagon .rectangle:nth-child(2){
-	bottom:25%;
-	left:6.5%;
-	transform: rotate(60deg);
-}
-
-.hexagon .rectangle:nth-child(3){
-	left:6.5%;
-	top:25%;
-	transform: rotate(300deg);
-}
-
-.hexagon .rectangle::before{
-	background-size: cover;
-	content: '';
-	display: block;
-	height:200%;
-	left: -7.5%;
-	position: absolute;
-	top: -50%;
-	width:115.47%;
-}
-
-.hexagon .rectangle:nth-child(2)::before{
-	transform:rotate(300deg);
-}
-
-.hexagon .rectangle:nth-child(3)::before{
-	transform:rotate(60deg);
-}
-
-.hexagon .center{
-	position: absolute;
-	transform:translate(-50%, -50%);
-	width:63.4%;
-	top:50%;
-	left:50%;
-}
-
-.hexagon .center::after{
-	content: '';
-	display: block;
-	padding-bottom: 100%;
-}
-
-.hexagon .content{
-	height:100%;
-	position: absolute;
-	width:100%;
-}
-
-.hexagon.hexagon-90deg .content{
-	transform: rotate(-90deg);
-}
-
-.hexagon.hexagon-90deg .rectangle:first-child::before{
-	transform: rotate(-90deg);
-}
-
-.hexagon.hexagon-90deg .rectangle:nth-child(2)::before{
-	transform: rotate(-150deg);
-}
-
-.hexagon.hexagon-90deg .rectangle:nth-child(3)::before{
-	transform:rotate(-30deg);
-}
 
 .clients{
 	background-image: url("../img/header_background.jpg");
@@ -217,6 +118,7 @@ h2{
 .menu-item{
 	margin-left:50px;
 	text-transform: uppercase;
+	font-family: Lato;
 	font-size: 18px;
 	padding: 5px 0;
 	-webkit-box-sizing: border-box;
@@ -301,11 +203,12 @@ h2{
 }
 
 .text{
-	width: 521px;
+	width: 55.43%;
 	display: block;
 	margin: 20px auto 86px;
 	text-align: center;
 	color:#adadad;
+	font-size: 20px;
 	line-height: 26px;
 	
 }
@@ -358,7 +261,7 @@ h2 > span::after{
 	background-image: url('../img/clients.png');
 }
 
-.icons-item:first-child:hover .hexagon-icon{
+.icons-item:first-child .hexagon:hover .hexagon-icon{
 	background-image: url('../img/clients_red.png');
 }
 
@@ -366,7 +269,7 @@ h2 > span::after{
 	background-image: url('../img/branding.png');
 }
 
-.icons-item:nth-child(2):hover .hexagon-icon{
+.icons-item:nth-child(2) .hexagon:hover .hexagon-icon{
 	background-image: url('../img/branding_red.png');
 }
 
@@ -374,7 +277,7 @@ h2 > span::after{
 	background-image: url('../img/marketing.png');
 }
 
-.icons-item:nth-child(3):hover .hexagon-icon{
+.icons-item:nth-child(3)  .hexagon:hover .hexagon-icon{
 	background-image: url('../img/marketing_red.png');
 }
 
@@ -382,7 +285,7 @@ h2 > span::after{
 	background-image: url('../img/adv.png');
 }
 
-.icons-item:last-child:hover .hexagon-icon{
+.icons-item:last-child .hexagon:hover .hexagon-icon{
 	background-image: url('../img/adv_red.png');
 }
 
@@ -463,9 +366,96 @@ h3 > span::after{
 	padding-top: 50px;
 }
 
-.process .arrow-white{
- 	margin-top:;
+.process .steps{
+	position:relative;
+	height: 500px;
+	margin-bottom:75px;
 }
+
+.process .step{
+	position:absolute;
+	text-align: center;
+}
+
+.process .step_1{
+	background-image: url("../img/step_1.png");
+	width:174px;
+	height:201px;
+	top:99px;
+	left:82px;
+}
+
+.process .step_2{
+	background-image: url("../img/step_2.png");
+	width:174px;
+	height:201px;
+	top:151px;
+	left:346px;
+}
+
+.process .step_3{
+	background-image: url("../img/step_3.png");
+	width:174px;
+	height:201px;
+	top:0;
+	left:432px;
+}
+
+.process .step_4{
+	background-image: url("../img/step_4.png");
+	width:262px;
+	height:302px;
+	top:72px;
+	left:604px;
+}
+
+.process .step_5{
+	background-image: url("../img/step_5.png");
+	width:264px;
+	height:302px;
+	top:248px;
+	left:124px;
+}
+
+.process .circle{
+	position:absolute;
+}
+
+.process .step .circle{
+	top:0;
+	transform:translate(-50%, 75%);
+}
+
+.process .step_4 .circle:nth-of-type(1){
+	transform:translate(-50%, 150%);
+}
+
+.process .step_4 .circle:nth-of-type(2){
+	bottom:0;
+	left:50%;
+	top:auto;
+	transform:translate(-50%, 50%);
+}
+
+.process .step h2{
+	font-size: 24px;
+	line-height: 26px;
+}
+
+.process .step h2 > span::after{
+	bottom: -.1em;
+}
+
+.process .step .description{
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 17px;
+	color:#adadad;
+	width:77%;
+	margin:1em auto 0;
+	text-align: left;	
+}
+
 
 .whatwedo{
 	background-color:#f2f2f2;
@@ -615,6 +605,12 @@ h3 > span::after{
 	padding:0 14px;
 }
 
+.portfolio-menu-item span:not(.slash):hover{
+	cursor:pointer;
+	text-decoration: underline;
+}
+
+
 .slash{
 	color:#868686;
 	padding:0 44px;
@@ -718,46 +714,29 @@ h3 > span::after{
 	text-align:center;
 }
 
-.member .hexagon{
-	width:170px;
-	display: inline-block;
-}
-
-.member .hexagon .rectangle{
-	border: none;
-}
-
-.member:first-child .rectangle::before{
-	background: url('../img/member-1.jpg') center;
-}
-
-.member:nth-child(2) .rectangle::before{
-	background: url('../img/member-2.jpg') center;
-}
-
-.member:nth-child(3) .rectangle::before{
-	background: url('../img/member-3.jpg') center;
-}
-
 .member-title{
 	font-size: 28px;
 	line-height: 26px;
-	color:#565656;
+	color:#818181;
 	display: block;
 	margin-top:26px;
 }
 
 .member-position{
 	font-size: 20px;
-	color:#565656;
+	color:#818181;
+	font-weight: 300;
 	line-height: 44px;
 }
 
 .social-icons{
+	display: inline-block;
 	margin-top:12px;
 }
 .icon{
 	float:left;
+	margin-left:9px;
+	margin-right:9px;
 }
 
 .icon:first-child{
@@ -780,4 +759,122 @@ h3 > span::after{
 
 .team .arrow-white{
 	margin-top:70px;
+}
+
+.ceo{
+	padding-top:52px;
+}
+
+.ceo-info{
+	font-size: 0;
+	margin-bottom:75px;
+	margin-top: 75px;
+}
+
+.ceo .content .ceo-pic img,
+.ceo .content img.quotes{
+	display: block;
+	margin:0 auto;
+}
+
+.ceo-text,
+.ceo-pic,
+.ceo-name{
+	display: inline-block;
+	height:100%;
+}
+
+.ceo-text{
+	width:34.043%;
+	color:#767676;
+	font-size: 15px;
+	line-height: 21px;
+}
+
+.ceo-pic{
+	width:31.914%;
+}
+
+.ceo-name{
+	width:34.043%;
+}
+
+.ceo-arrow-left,
+.ceo-arrow-right{
+	float:left;
+	width:50%;
+	padding:0 12px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.ceo-arrow-left img{
+	float:right;
+}
+
+.ceo-arrow-right img{
+	float:left;
+}
+
+.map{
+	background: url('../img/map.jpg') no-repeat top center;
+	background-size:cover;
+	height:512px;
+	margin-top: 160px;
+
+}
+
+.address-rect{
+	background: url('../img/address.png') no-repeat top center;
+	height:242px;
+	width:210px;
+	position: relative;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+    left:50%;
+}
+
+.address-rect-text,
+
+.address-rect-name{
+
+	display: block;
+	text-align: center;
+	padding:0.5em;
+	color:#fff;
+}
+
+.address-rect-name{
+	font-size: 27px;
+	font-weight:bold;
+}
+
+.address-rect-text{
+	font-size: 15px;
+}
+
+.footer{
+	background: url('../img/footer.jpg') no-repeat top center;
+	background-size:cover;
+	height:212px;
+	text-align: center;
+}
+
+.footer .logo_img{
+	height: 90px;
+	width: 78px;
+	background-size: cover;
+}
+
+.footer .logo_text{
+	font-size: 40px;
+}
+
+.footer .logo_img,
+.footer .logo_text{
+	display: inline-block;
 }
