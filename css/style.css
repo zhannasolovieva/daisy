@@ -186,11 +186,13 @@ h2{
 .arrow {
 	background: url('../img/arrow.png') no-repeat center top;
 	height: 28px;
+	cursor: pointer;
 }
 
 .arrow-white{
 	background: url('../img/arrow_white.png') no-repeat center top;
 	height: 28px;
+	cursor: pointer;
 }
 .clients .arrow{
 	margin-top:234px;
@@ -737,6 +739,7 @@ h3 > span::after{
 	float:left;
 	margin-left:9px;
 	margin-right:9px;
+	cursor: pointer;
 }
 
 .icon:first-child{
